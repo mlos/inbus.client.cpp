@@ -2,6 +2,8 @@
  * Copyright (c) 2017,2018 Maarten Los
  * See LICENSE.rst for details.
  */
+#include "version.h"
+
 #include "publisher.h"
 
 #include <arpa/inet.h>
