@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2018 Maarten Los
+#
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libinbusclient
+Description: C++ client for Inbus
+Libs: -L${libdir} -linbusclient
