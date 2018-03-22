@@ -2,8 +2,8 @@
 C++ Client for Inbus 
 =====================
 
-.. image:: https://readthedocs.org/projects/inbus/badge/?version=latest
-   :target: http://inbusclientcpp.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/inbusclientcpp/badge/?version=latest
+   :target: http://inbusclientcpp.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
 .. -readme-start-
