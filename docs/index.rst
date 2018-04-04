@@ -18,3 +18,4 @@ Table of Contents
     usage
     changelog
     bugs
+    acknowledgements

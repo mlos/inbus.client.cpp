@@ -5,4 +5,5 @@ ChangeLog
 Version   Description           Date
 ========= ===================== ==============
 **1.0.0** * Initial version     17-Mar-2018
+**1.1.0** * Use protocol v2     02-Apr-2018
 ========= ===================== ==============

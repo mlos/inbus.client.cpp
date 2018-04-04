@@ -5,6 +5,8 @@
 #include "version.h"
 
 #include "publisher.h"
+#include "cpp-base64/base64.h"
+
 
 #include <arpa/inet.h>
 #include <sys/socket.h>
@@ -44,13 +46,14 @@ bool Publisher::publish(const std::string& payload, int appType)
 std::string Publisher::toOutgoingMessage(const std::string& payload, int appType)
 {
     std::stringstream json;
+    const std::string& encodedPayload = base64_encode(reinterpret_cast<const unsigned char*>(payload.c_str()), payload.length());
 
     json << "{" 
-        << "\"version\":1,"
+        << "\"version\":2,"
         << "\"opcode\":3,"
         << "\"application\":[\"" << m_appKey << "\", " << appType << "],"
         << "\"address\":[\"\",0],"
-        << "\"payload\":\"" << payload << "\""
+        << "\"payload\":\"" << encodedPayload << "\""
         <<  "}";
 
     return json.str();
